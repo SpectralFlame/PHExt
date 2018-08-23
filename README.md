@@ -1,7 +1,8 @@
 # PHExt
 
 PHExt is a chrome extension which aims at making specific parts of Pokeheroes more userfriendly.
-PHExt will never make something easier that is part of the game since that would be unfair to those that doesn't have the extension.
+
+PHExt will never make something easier that is part of the game since that would be unfair to those who don't have the extension.
 
 ## What's new in v1.0.0?
 
