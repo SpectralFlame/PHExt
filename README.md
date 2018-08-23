@@ -9,7 +9,10 @@ PHExt will never make something easier that is part of the game since that would
   
 # Installation
 
-* Step 1: Download this repository (the green download button on the top right.
-* Step 2: Go to chrome://extensions
-* Step 3: Turn on "Developer mode" located at the top right of the page.
-* Step 4: Click "Load unpacked" and select the folder you downloaded in step 1.
+* Step 1: Download this repository
+  * Click the green button "Clone or Download"
+  * Click "Download ZIP"
+* Step 2: Unzip the downloaded files.
+* Step 3: Go to chrome://extensions
+* Step 4: Turn on "Developer mode" located at the top right of the page.
+* Step 5: Click "Load unpacked" and select the folder you unzipped in step 2.
