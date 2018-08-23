@@ -145,8 +145,17 @@ a span.last_msg {
 .msg_wrapper {
     min-height: 30px;
 }
+.picspace {
+    width: 40px;
+    display: inline-block;
+}
 .msg {
     margin: 1px;
+    width: calc(95% - 50px);
+    display: inline-block;
+}
+.msg_right {
+    width: 99%;
 }
 .chat_txt {
     display: block;
@@ -187,12 +196,4 @@ a span.last_msg {
 .picspace .pic {
     width: 40px;
     height: 40px;
-}
-.picspace {
-    width: 40px;
-    display: inline-block;
-}
-.msg {
-    width: 70%;
-    display: inline-block;
 }

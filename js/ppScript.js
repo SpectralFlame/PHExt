@@ -144,7 +144,7 @@ function convertMsg(data) {
             } else {
                 // you
                 console.log("you");
-                elMsg.setAttribute("class", "msg");
+                elMsg.setAttribute("class", "msg_right");
                 elMsg.innerHTML += "<div class='chat_txt you'>" + msg + "<span class='time ty'>" + time + "</span></div>";
             }
         }
