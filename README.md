@@ -7,7 +7,11 @@ PHExt will never make something easier that is part of the game since that would
 ## What's new in v1.0.0?
 
   * pokeheroes.com/palpad is a full page dedicated to palpad.
-  
+
+# Requirements
+
+* Google Chrome PC version.
+
 # Installation
 
 * Step 1: Download this repository
