@@ -1,0 +1,42 @@
+{
+  "name": "PHExt",
+  "version": "1.0",
+  "description": "A PH overlay",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": [
+      "./js/main.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.pokeheroes.com/*"],
+      "exclude_matches": [],
+      "run_at": "document_start",
+      "js": ["js/contentScripts/palpad.js"]
+    },
+    {
+      "matches": ["*://*.pokeheroes.com/palpad"],
+      "run_at": "document_idle",
+      "js": ["./js/thirdParty/jquery-3.3.1.slim.min.js", "./js/contentScripts/palpadPage.js"]
+    }
+  ],
+  "options_page": "www/options.html",
+  "page_action": {
+    "default_popup": "www/popup.html",
+    "default_icon": {
+      "16": "img/duck16.png",
+      "32": "img/duck32.png"
+    }
+  },
+  "icons": {
+    "16": "img/duck16.png",
+    "32": "img/duck32.png"
+  },
+  "web_accessible_resources": [
+    "www/palpadPage.html",
+    "css/palpadPage.css"
+  ],
+  "manifest_version": 2
+}
