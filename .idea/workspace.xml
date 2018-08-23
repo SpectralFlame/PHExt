@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae207dfe-81a8-486e-a0a8-a7033dee8f86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/palpadPage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/contentScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/contentScripts/palpad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/contentScripts/palpadPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/thirdParty/jquery-3.3.1.slim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/options.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/palpadPage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/popup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ppScript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/thirdParty/jquery.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/thirdParty/jquery-3.3.1.slim.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/palpadPage.css" afterPath="$PROJECT_DIR$/css/palpadPage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/contentScripts/palpadPage.js" afterPath="$PROJECT_DIR$/js/contentScripts/palpadPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/palpadPage.html" afterPath="$PROJECT_DIR$/www/palpadPage.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="424">
+              <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -39,18 +36,30 @@
       <file leaf-file-name="palpadPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/contentScripts/palpadPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="187">
+              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ppScript.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ppScript.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="palpadPage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="palpadPage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/palpadPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -59,8 +68,8 @@
       <file leaf-file-name="palpadPage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/palpadPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="356">
+              <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -72,8 +81,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -93,10 +102,12 @@
         <option value="$PROJECT_DIR$/js/contentScript.js" />
         <option value="$PROJECT_DIR$/js/contentScripts/palpad.js" />
         <option value="$PROJECT_DIR$/js/thirdParty/jquery-3.3.1.slim.min.js" />
+        <option value="$PROJECT_DIR$/js/thirdParty/jquery.min.js" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/js/contentScripts/palpadPage.js" />
-        <option value="$PROJECT_DIR$/www/palpadPage.html" />
         <option value="$PROJECT_DIR$/css/palpadPage.css" />
+        <option value="$PROJECT_DIR$/js/ppScript.js" />
+        <option value="$PROJECT_DIR$/www/palpadPage.html" />
       </list>
     </option>
   </component>
@@ -212,12 +223,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534896150522</updated>
-      <workItem from="1534896175910" duration="15151000" />
+      <workItem from="1534896175910" duration="35052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15151000" />
+    <option name="totallyTimeSpent" value="35052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -268,16 +279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/thirdParty/jquery-3.3.1.slim.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="69627" lean-forward="false" selection-start-line="1" selection-start-column="69627" selection-end-line="1" selection-end-column="69627" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/contentScripts/palpad.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -318,34 +319,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/palpadPage.html">
+    <entry file="file://$PROJECT_DIR$/js/thirdParty/jquery-3.3.1.slim.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="8568">
+          <caret line="1" column="69627" lean-forward="false" selection-start-line="1" selection-start-column="69627" selection-end-line="1" selection-end-column="69627" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/contentScripts/palpadPage.js">
+    <entry file="file://$PROJECT_DIR$/js/thirdParty/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="85">
+          <caret line="5" column="28784" lean-forward="false" selection-start-line="5" selection-start-column="28784" selection-end-line="5" selection-end-column="28784" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/palpadPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="356">
+          <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
+    <entry file="file://$PROJECT_DIR$/js/ppScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="390">
+          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/contentScripts/palpadPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/palpadPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
           <folding />
         </state>
       </provider>

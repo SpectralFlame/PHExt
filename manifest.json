@@ -19,7 +19,7 @@
     {
       "matches": ["*://*.pokeheroes.com/palpad"],
       "run_at": "document_idle",
-      "js": ["./js/thirdParty/jquery-3.3.1.slim.min.js", "./js/contentScripts/palpadPage.js"]
+      "js": ["./js/thirdParty/jquery.min.js", "./js/contentScripts/palpadPage.js"]
     }
   ],
   "options_page": "www/options.html",
@@ -36,7 +36,8 @@
   },
   "web_accessible_resources": [
     "www/palpadPage.html",
-    "css/palpadPage.css"
+    "css/palpadPage.css",
+    "js/ppScript.js"
   ],
   "manifest_version": 2
 }

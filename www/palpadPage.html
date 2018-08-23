@@ -1,4 +1,30 @@
 <div class="wrapper">
-    <div class="aside">test</div>
-    <div class="main">test</div>
+    <div class="aside aside_left">
+        <div class="titleBar">
+            Recent Chats
+        </div>
+        <div class="scrollbar" id="recentChats">
+
+        </div>
+    </div>
+    <div id="chatWindow" class="main">
+        <div class="titleBar" id="username">
+            Username
+        </div>
+        <div class="scrollbar" id="chat">
+
+        </div>
+        <div class="chatBar">
+            <input type="hidden" id="uid" value="0"/>
+            <input type="text" id="tbxChat" onkeypress="sendMsg(e, this)"/>
+        </div>
+    </div>
+    <div class="aside aside_right">
+        <div class="titleBar">
+            <input id="tbxSearch" type="text" placeholder="Search user..." oninput="searchUser(this)"/>
+        </div>
+        <div class="scrollbar" id="users">
+
+        </div>
+    </div>
 </div>

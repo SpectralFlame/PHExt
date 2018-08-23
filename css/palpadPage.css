@@ -1,20 +1,31 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    box-sizing: border-box;
+}
 .wrapper {
     display: flex;
     min-width: 500px;
     font-size: 14px;
+    height: 100vh;
+    padding: 10px;
 }
-
 .main {
     display: flex;
     flex-direction: column;
-    min-width: 0px;
+    min-width: 250px;
     flex: 3;
+    padding: 5px;
 }
-
 .aside {
-    flex: 0 0 25%;
-    max-width: 420px;
-    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    min-width: 150px;
+    max-width: 250px;
+    padding: 5px;
 }
 
 @media all and (max-width: 700px) {
@@ -22,4 +33,55 @@
         flex-basis: 74px;
         min-width: 74px;
     }
+}
+
+#tbxSearch {
+    width: 100%;
+}
+
+.friend_chat {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.friend_chat .img img {
+    max-width: 40px;
+    max-height: 40px;
+    border: 0;
+}
+
+.titleBar {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    width: 100%;
+}
+.chatBar {
+    margin: 5px;
+    width: 100%;
+}
+#tbxChat {
+    width: 100%;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+}
+
+.user_ava {
+    display: inline-block;
+    vertical-align: top;
+}
+.chat_txt {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+.chat_msg {
+    padding: 5px;
 }
