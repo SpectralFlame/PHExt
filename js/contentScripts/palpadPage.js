@@ -61,7 +61,13 @@ $.ajax({
     }
 });
 
+//
+// FUNCTIONS
+//
+
 function openPrivateChat(name, uid) {
+    document.getElementById("username").innerHTML = name;
+    document.getElementById("uid").value = uid;
     $.ajax({
         url: "//palpad.pokeheroes.com/loadchat.php?" + Math.random(),
         type: "POST",

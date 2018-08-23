@@ -1,21 +1,18 @@
+
+let chatOldTime = 0;
+let chatInterval = null;
+
 function openPrivateChat(name, uid) {
     document.getElementById("username").innerHTML = name;
     document.getElementById("uid").value = uid;
-    $.ajax({
-        url: "//palpad.pokeheroes.com/loadchat.php?" + Math.random(),
-        type: "POST",
-        data: {
-            partner: uid,
-            date_lim: "",
-            upd: "y"
-        },
-        xhrFields: {
-            withCredentials: true
-        },
-        success: function(data) {
-            document.getElementById("chat").innerHTML = data;
-        }
-    });
+    chatOldTime = 0;
+    document.getElementById("chat").innerHTML = "";
+    if (chatInterval != null) {
+        clearInterval(chatInterval);
+        chatInterval = null;
+    }
+    console.log("readMsgs started");
+    chatInterval = setInterval(readMsgs, 3000);
 }
 
 function searchUser(e) {
@@ -35,7 +32,7 @@ function searchUser(e) {
 }
 
 function sendMsg(e, obj) {
-    if (e.keyCode === 13) {
+    if (e.keyCode == 13) {
         $.ajax({
             url: "//palpad.pokeheroes.com/sendmsg.php",
             type: "POST",
@@ -43,9 +40,38 @@ function sendMsg(e, obj) {
                 partner: document.getElementById("uid").value,
                 msg: obj.value
             },
+            xhrFields: {
+                withCredentials: true
+            },
             success: function(data) {
-            
+                obj.value = "";
+                readMsgs();
             }
         });
     }
+}
+
+
+function readMsgs() {
+    $.ajax({
+        url: "//palpad.pokeheroes.com/loadchat.php?" + Math.random(),
+        type: "POST",
+        data: {
+            partner: document.getElementById("uid").value,
+            date_lim: ">" + chatOldTime,
+            upd: "y"
+        },
+        xhrFields: {
+            withCredentials: true
+        },
+        success: function(data) {
+            let oldTime = data.match(/updateChatOldTime\((\d+)\)/);
+            if (oldTime != null) {
+                chatOldTime = oldTime[1];
+            }
+            let chat = document.getElementById("chat");
+            chat.innerHTML += data;
+            chat.scrollTop = chat.scrollHeight;
+        }
+    });
 }
