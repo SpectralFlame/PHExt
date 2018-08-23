@@ -16,3 +16,5 @@ PHExt will never make something easier that is part of the game since that would
 * Step 3: Go to chrome://extensions
 * Step 4: Turn on "Developer mode" located at the top right of the page.
 * Step 5: Click "Load unpacked" and select the folder you unzipped in step 2.
+
+Now the extension is activated, enjoy pokeheroes! :)
