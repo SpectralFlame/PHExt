@@ -3,15 +3,11 @@ html, body {
     padding: 0px;
     font-family: Verdana,sans-serif;
 }
-div {
-    box-sizing: border-box;
-}
 .wrapper {
     display: flex;
     min-width: 500px;
     font-size: 14px;
     height: 100vh;
-    padding: 10px;
 }
 .main {
     display: flex;
@@ -60,7 +56,6 @@ div {
     font-size: 16px;
     font-weight: bold;
     margin: 10px;
-    width: 100%;
 }
 .chatBar {
     margin: 5px;
@@ -122,78 +117,101 @@ a span.last_msg {
     font-style: italic;
 }
 
-
+#chat {
+    padding: 5px;
+}
 
 .other {
-    background: yellow;
-    padding-left: 5px;
-    padding-right: 10px;
     float: left;
-    margin-right: 40%;
-    margin-bottom: 2px;
 }
-
 .you {
     float: right;
+}
+.mbo {
     background: lime;
-    text-align: right;
-    padding-left: 10px;
-    padding-right: 5px;
-    margin-left: 40%;
-    margin-bottom: 2px;
-}
-.msg_wrapper {
-    min-height: 30px;
-}
-.picspace {
-    width: 40px;
-    display: inline-block;
-}
-.msg {
-    margin: 1px;
-    width: calc(95% - 50px);
-    display: inline-block;
-}
-.msg_right {
-    width: 99%;
-}
-.chat_txt {
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
     border-radius: 2px 10px 10px 2px;
 }
-.time {
-    display:inline-block;
-    position: relative;
-    font-size: 8px;
-    bottom: -5px;
-}
-.ty {
-    margin-left: 5px;
-}
-.to {
-    margin-right: 5px;
-}
-.other:first-child {
+.mbo:first-child {
     border-radius: 10px 10px 10px 2px;
 }
-.other:last-child {
+.mbo:last-child {
     border-radius: 2px 10px 10px 10px;
 }
-.other:only-child {
+.mbo:only-child {
     border-radius: 10px;
 }
-.you:first-child {
+.mby {
+    background: yellow;
+    border-radius: 10px 2px 2px 10px;
+}
+.mby:first-child {
     border-radius: 10px 10px 2px 10px;
 }
-.you:last-child {
+.mby:last-child {
     border-radius: 10px 2px 10px 10px;
 }
-.you:only-child {
+.mby:only-child {
     border-radius: 10px;
 }
-.picspace .pic {
+
+.msg_wrapper_outer {
+    width: 100%;
+    margin: 5px;
+    height: fit-content;
+    display:flex;
+}
+.msg_wrapper_inner {
+    display: flex; /* equal height of the children */
+    max-width: 60%;
+}
+.mwoy {
+    flex-direction: row-reverse;
+}
+
+.msgspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.msy {
+    align-items: flex-end;
+}
+.msgblock {
+    display: flex;
+    padding: 3px;
+    margin: 2px;
+    width: fit-content;
+}
+.msg {
+    flex: 1;
+    padding: 2px;
+}
+
+.timespace {
+    font-size: 8px;
+    flex: 0;
+    width: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.timerel {
+    width: 30px;
+    text-align: center;
+}
+
+.picspace {
+    flex: 0; /* additionally, equal width */
     width: 40px;
-    height: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.picrel {
+    position: relative;
+    width: 40px;
+    height: 100%;
+}
+.pic {
+    max-width: 30px;
+    max-height: 30px;
 }
