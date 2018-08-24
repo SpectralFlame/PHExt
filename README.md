@@ -7,7 +7,7 @@ PHExt will never make something easier that is part of the game since that would
 ## What's new in v1.0.1?
 
   * pokeheroes.com/palpad is a full page dedicated to palpad.
-  * Able to send images via the palpad page.
+  * Able to send images via the palpad page using [img]someurl.jpg[/img]
 
 # Requirements
 
