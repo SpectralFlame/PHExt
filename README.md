@@ -4,6 +4,8 @@ PHExt is a chrome extension which aims at making specific parts of Pokeheroes mo
 
 PHExt will never make something easier that is part of the game since that would be unfair to those who don't have the extension.
 
+Made by [SwampFall](https://pokeheroes.com/userprofile?name=SwampFall).
+
 ## What's new in v1.0.1?
 
   * [pokeheroes.com/palpad](https://pokeheroes.com/palpad) is now a full page dedicated to palpad.
