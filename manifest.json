@@ -13,7 +13,7 @@
     {
       "matches": ["*://*.pokeheroes.com/*"],
       "exclude_matches": [],
-      "run_at": "document_start",
+      "run_at": "document_idle",
       "js": ["js/contentScripts/palpad.js"]
     },
     {
@@ -37,7 +37,8 @@
   "web_accessible_resources": [
     "www/palpadPage.html",
     "css/palpadPage.css",
-    "js/ppScript.js"
+    "js/ppScript.js",
+    "img/golden_palpad.png"
   ],
   "manifest_version": 2
 }

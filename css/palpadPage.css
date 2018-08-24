@@ -24,6 +24,7 @@ html, body {
     min-width: 150px;
     max-width: 250px;
     padding: 5px;
+    overflow-x: hidden;
 }
 
 @media all and (max-width: 700px) {
@@ -96,7 +97,11 @@ html, body {
 
 
 #users a {
-    display: inline-block;
+    display: table;
+    margin: 3px;
+}
+#users {
+    overflow-x: hidden;
 }
 
 span.img {

@@ -2,6 +2,7 @@ let read_again = false;
 let reading = false;
 let chatOldTime = 0;
 let chatInterval = null;
+let userInterval = null;
 let searching = false;
 
 function openPrivateChat(name, uid) {
@@ -38,6 +39,146 @@ function searchUser(e) {
         searching = false;
     }
 }
+function updateUsers() {
+    if (!searching) {
+        $.ajax({
+            url: "//palpad.pokeheroes.com/conv_list.php?" + Math.random(),
+            type: "POST",
+            data: {
+                activeLogin: true
+            },
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function(data) {
+                addUsers(data);
+            }
+        });
+    }
+}
+
+function addUsers(data) {
+    $("#users").text("");
+    let convArr = JSON.parse(data)["convlist"];
+    for (let i = convArr.length - 1; i >= 0; i--) {
+        $("#users").prepend('<a class="friend_chat" onclick="openPrivateChat(\'' + convArr[i].Name + '\', ' + convArr[i].Uid + ');">' +
+            '<span class="img"><img src="' + convArr[i].Avatar + '"></span>' +
+            '<img src="//staticpokeheroes.com/img/misc/' + convArr[i].On + '.png"> ' + (convArr[i].isNew ? '<span style="font-size: 6pt; color: red"><b>NEW</b></span> ' : '') + '' + convArr[i].Name + '<br>' +
+            (convArr[i].lastMsg >= 0 ? '<span class="last_msg active_countdown" data-countto="' + convArr[i].lastMsg + '" data-dateformat="1">' + getDateCountdownText(convArr[i].lastMsg, 1) + '</span>' : '') +
+            '</a>');
+    }
+}
+function getDateCountdownText(t, dateFormat) {
+    let txt;
+    let diff;
+    let subfix = "";
+    let praefix = "";
+    let years, months, days, hours, minutes, seconds;
+    let var_used, dateformat;
+    let curr_unix = Math.round((new Date()).getTime() / 1000);
+    if (t > 0) {
+        diff = t - curr_unix;
+        if (diff < 0) {
+            subfix = "";
+            praefix = "ago";
+            diff = -diff;
+        } else {
+            subfix = "In ";
+            praefix = ""
+        }
+        years = Math.floor(diff / (60 * 60 * 24 * 365));
+        diff = diff - (years * 60 * 60 * 24 * 365);
+        months = Math.floor(diff / (60 * 60 * 24 * 30.5));
+        diff = Math.round(diff - (months * 60 * 60 * 24 * 30.5));
+        days = Math.floor(diff / (60 * 60 * 24));
+        diff = diff - (days * 60 * 60 * 24);
+        hours = Math.floor(diff / (60 * 60));
+        diff = diff - (hours * 60 * 60);
+        minutes = Math.floor(diff / 60);
+        diff = diff - (minutes * 60);
+        seconds = diff;
+        if (dateFormat != null && dateFormat == 1) {
+            var_used = 1;
+            dateformat = 1;
+        } else {
+            dateformat = 2;
+            var_used = 0;
+        }
+        txt = "";
+        if (years > 0) {
+            if (years > 1) {
+                txt = txt + years + " years "
+            } else {
+                txt = txt + "1 year "
+            }
+            var_used++
+        }
+        if ((var_used < 2 && months > 0) || (var_used == 1 && dateformat == 2)) {
+            if (var_used == 1 && dateformat == 2) {
+                txt = txt + "and "
+            }
+            if (months > 1) {
+                txt = txt + months + " months "
+            } else {
+                txt = txt + "1 month "
+            }
+            var_used++
+        }
+        if ((var_used < 2 && days > 0) || (var_used == 1 && dateformat == 2)) {
+            if (var_used == 1 && dateformat == 2) {
+                txt = txt + "and "
+            }
+            if (days > 1) {
+                txt = txt + days + " days "
+            } else {
+                txt = txt + "1 day "
+            }
+            var_used++
+        }
+        if ((var_used < 2 && hours > 0) || (var_used == 1 && dateformat == 2)) {
+            if (var_used == 1 && dateformat == 2) {
+                txt = txt + "and "
+            }
+            if (hours > 1) {
+                txt = txt + hours + " hours "
+            } else {
+                txt = txt + "1 hour "
+            }
+            var_used++
+        }
+        if ((var_used < 2 && minutes > 0) || (var_used == 1 && dateformat == 2)) {
+            if (var_used == 1 && dateformat == 2) {
+                txt = txt + "and "
+            }
+            if (minutes > 1) {
+                txt = txt + minutes + " minutes "
+            } else {
+                txt = txt + "1 minute "
+            }
+            var_used++
+        }
+        if ((var_used < 2 && seconds > 0) || (var_used == 1 && dateformat == 2)) {
+            if (var_used == 1 && dateformat == 2) {
+                txt = txt + "and "
+            }
+            if (seconds > 1) {
+                txt = txt + seconds + " seconds "
+            } else {
+                txt = txt + "1 second "
+            }
+            var_used++
+        }
+        if (txt != "") {
+            txt = subfix + txt + praefix
+        } else {
+            txt = "Now"
+        }
+        if (txt.charAt(txt.length - 1) == " ") {
+            txt = txt.substr(0, txt.length - 1)
+        }
+    }
+    return txt;
+}
 
 function sendMsg(e, obj) {
     if (e.keyCode == 13) {
@@ -62,8 +203,6 @@ function sendMsg(e, obj) {
         });
     }
 }
-
-
 function readMsgs(uid) {
     if (!reading) {
         reading = true;
@@ -207,3 +346,4 @@ function scrollDown() {
 
 setTimeout(readMsgs, 500);
 chatInterval = setInterval(readMsgs, 3000);
+userInterval = setInterval(updateUsers, 3000);
