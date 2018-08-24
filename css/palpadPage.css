@@ -2,6 +2,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     font-family: Verdana,sans-serif;
+    background: #ebf0f5;
 }
 .wrapper {
     display: flex;
@@ -128,7 +129,7 @@ a span.last_msg {
     float: right;
 }
 .mbo {
-    background: lime;
+    background: #a1d9ff;
     border-radius: 2px 10px 10px 2px;
 }
 .mbo:first-child {
@@ -141,7 +142,7 @@ a span.last_msg {
     border-radius: 10px;
 }
 .mby {
-    background: yellow;
+    background: #d3ffab;
     border-radius: 10px 2px 2px 10px;
 }
 .mby:first-child {
@@ -178,7 +179,7 @@ a span.last_msg {
 }
 .msgblock {
     display: flex;
-    padding: 3px;
+    padding: 3px 5px 3px 5px;
     margin: 2px;
     width: fit-content;
 }

@@ -80,7 +80,7 @@ function openPrivateChat(name, uid) {
             withCredentials: true
         },
         success: function(data) {
-            document.getElementById("chat").innerHTML = data;
+            //document.getElementById("chat").innerHTML = data;
         }
     });
 }

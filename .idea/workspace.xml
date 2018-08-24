@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae207dfe-81a8-486e-a0a8-a7033dee8f86" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/palpadPage.css" afterPath="$PROJECT_DIR$/css/palpadPage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/contentScripts/palpadPage.js" afterPath="$PROJECT_DIR$/js/contentScripts/palpadPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ppScript.js" afterPath="$PROJECT_DIR$/js/ppScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/palpadPage.html" afterPath="$PROJECT_DIR$/www/palpadPage.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="palpadPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/contentScripts/palpadPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+            <state relative-caret-position="390">
+              <caret line="82" column="14" lean-forward="false" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -45,18 +43,17 @@
       <file leaf-file-name="ppScript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/ppScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="211" column="27" lean-forward="false" selection-start-line="211" selection-start-column="27" selection-end-line="211" selection-end-column="27" />
+            <state relative-caret-position="271">
+              <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
               <folding>
                 <element signature="n#!!block;n#sendMsg#0" expanded="false" />
                 <element signature="n#!!block;n#addMessagesToChat#0" expanded="false" />
                 <element signature="n#!!block;n#addMsgBlockY#0" expanded="false" />
                 <element signature="n#!!block;n#addMsgBlockO#0" expanded="false" />
                 <element signature="n#!!block;n#addTimeField#0" expanded="false" />
-                <element signature="n#!!block;n#scrollDown#0" expanded="false" />
-                <marker date="1535146043220" expanded="true" signature="3725:3742" ph="..." />
-                <marker date="1535146043220" expanded="true" signature="3725:3760" ph="..." />
-                <marker date="1535146043220" expanded="true" signature="3729:3742" ph="..." />
+                <marker date="1535146729537" expanded="true" signature="3665:3682" ph="..." />
+                <marker date="1535146729537" expanded="true" signature="3665:3700" ph="..." />
+                <marker date="1535146729537" expanded="true" signature="3669:3682" ph="..." />
               </folding>
             </state>
           </provider>
@@ -75,16 +72,16 @@
       <file leaf-file-name="palpadPage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/palpadPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="215" column="17" lean-forward="false" selection-start-line="215" selection-start-column="17" selection-end-line="215" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="181" column="28" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="28" />
               <folding>
-                <element signature="e#1000#1027#0" expanded="false" />
-                <element signature="e#1058#1075#0" expanded="false" />
-                <element signature="e#1096#1114#0" expanded="false" />
-                <element signature="e#1141#1270#0" expanded="false" />
-                <element signature="e#1297#1410#0" expanded="false" />
-                <element signature="e#1443#1466#0" expanded="false" />
-                <element signature="e#1500#1580#0" expanded="false" />
+                <element signature="e#1025#1052#0" expanded="false" />
+                <element signature="e#1083#1100#0" expanded="false" />
+                <element signature="e#1121#1139#0" expanded="false" />
+                <element signature="e#1166#1295#0" expanded="false" />
+                <element signature="e#1322#1435#0" expanded="false" />
+                <element signature="e#1468#1491#0" expanded="false" />
+                <element signature="e#1525#1605#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -118,10 +115,10 @@
         <option value="$PROJECT_DIR$/js/contentScripts/palpad.js" />
         <option value="$PROJECT_DIR$/js/thirdParty/jquery-3.3.1.slim.min.js" />
         <option value="$PROJECT_DIR$/js/thirdParty/jquery.min.js" />
-        <option value="$PROJECT_DIR$/js/contentScripts/palpadPage.js" />
         <option value="$PROJECT_DIR$/www/palpadPage.html" />
-        <option value="$PROJECT_DIR$/css/palpadPage.css" />
         <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/css/palpadPage.css" />
+        <option value="$PROJECT_DIR$/js/contentScripts/palpadPage.js" />
         <option value="$PROJECT_DIR$/js/ppScript.js" />
       </list>
     </option>
@@ -239,12 +236,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534896150522</updated>
       <workItem from="1534896175910" duration="53734000" />
-      <workItem from="1535122314207" duration="9073000" />
+      <workItem from="1535122314207" duration="9777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62807000" />
+    <option name="totallyTimeSpent" value="63511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -307,10 +304,9 @@
             <element signature="n#!!block;n#addMsgBlockY#0" expanded="false" />
             <element signature="n#!!block;n#addMsgBlockO#0" expanded="false" />
             <element signature="n#!!block;n#addTimeField#0" expanded="false" />
-            <element signature="n#!!block;n#scrollDown#0" expanded="false" />
-            <marker date="1535146043220" expanded="true" signature="3725:3742" ph="..." />
-            <marker date="1535146043220" expanded="true" signature="3725:3760" ph="..." />
-            <marker date="1535146043220" expanded="true" signature="3729:3742" ph="..." />
+            <marker date="1535146729537" expanded="true" signature="3665:3682" ph="..." />
+            <marker date="1535146729537" expanded="true" signature="3665:3700" ph="..." />
+            <marker date="1535146729537" expanded="true" signature="3669:3682" ph="..." />
           </folding>
         </state>
       </provider>
@@ -328,13 +324,13 @@
         <state relative-caret-position="2584">
           <caret line="152" column="16" lean-forward="true" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
           <folding>
-            <element signature="e#1000#1027#0" expanded="false" />
-            <element signature="e#1058#1075#0" expanded="false" />
-            <element signature="e#1096#1114#0" expanded="false" />
-            <element signature="e#1141#1270#0" expanded="false" />
-            <element signature="e#1297#1410#0" expanded="false" />
-            <element signature="e#1443#1466#0" expanded="false" />
-            <element signature="e#1500#1580#0" expanded="false" />
+            <element signature="e#1025#1052#0" expanded="false" />
+            <element signature="e#1083#1100#0" expanded="false" />
+            <element signature="e#1121#1139#0" expanded="false" />
+            <element signature="e#1166#1295#0" expanded="false" />
+            <element signature="e#1322#1435#0" expanded="false" />
+            <element signature="e#1468#1491#0" expanded="false" />
+            <element signature="e#1525#1605#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -420,24 +416,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/palpadPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="215" column="17" lean-forward="false" selection-start-line="215" selection-start-column="17" selection-end-line="215" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="181" column="28" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="28" />
           <folding>
-            <element signature="e#1000#1027#0" expanded="false" />
-            <element signature="e#1058#1075#0" expanded="false" />
-            <element signature="e#1096#1114#0" expanded="false" />
-            <element signature="e#1141#1270#0" expanded="false" />
-            <element signature="e#1297#1410#0" expanded="false" />
-            <element signature="e#1443#1466#0" expanded="false" />
-            <element signature="e#1500#1580#0" expanded="false" />
+            <element signature="e#1025#1052#0" expanded="false" />
+            <element signature="e#1083#1100#0" expanded="false" />
+            <element signature="e#1121#1139#0" expanded="false" />
+            <element signature="e#1166#1295#0" expanded="false" />
+            <element signature="e#1322#1435#0" expanded="false" />
+            <element signature="e#1468#1491#0" expanded="false" />
+            <element signature="e#1525#1605#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/contentScripts/palpadPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+        <state relative-caret-position="390">
+          <caret line="82" column="14" lean-forward="false" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -446,18 +442,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ppScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="211" column="27" lean-forward="false" selection-start-line="211" selection-start-column="27" selection-end-line="211" selection-end-column="27" />
+        <state relative-caret-position="271">
+          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
           <folding>
             <element signature="n#!!block;n#sendMsg#0" expanded="false" />
             <element signature="n#!!block;n#addMessagesToChat#0" expanded="false" />
             <element signature="n#!!block;n#addMsgBlockY#0" expanded="false" />
             <element signature="n#!!block;n#addMsgBlockO#0" expanded="false" />
             <element signature="n#!!block;n#addTimeField#0" expanded="false" />
-            <element signature="n#!!block;n#scrollDown#0" expanded="false" />
-            <marker date="1535146043220" expanded="true" signature="3725:3742" ph="..." />
-            <marker date="1535146043220" expanded="true" signature="3725:3760" ph="..." />
-            <marker date="1535146043220" expanded="true" signature="3729:3742" ph="..." />
+            <marker date="1535146729537" expanded="true" signature="3665:3682" ph="..." />
+            <marker date="1535146729537" expanded="true" signature="3665:3700" ph="..." />
+            <marker date="1535146729537" expanded="true" signature="3669:3682" ph="..." />
           </folding>
         </state>
       </provider>

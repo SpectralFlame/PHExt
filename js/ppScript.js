@@ -82,7 +82,6 @@ function readMsgs(uid) {
                 withCredentials: true
             },
             success: function (data) {
-                let chat = document.getElementById("chat");
                 addMessagesToChat(data);
                 let oldTime = data.match(/prv_update = (\d+);/);
                 if (oldTime != null) {
@@ -143,9 +142,6 @@ function addMessagesToChat(data) {
                     msgOuter.appendChild(elMsg);
                 }
                 lastUid = uid;
-    
-                console.log(uid);
-                console.log(document.getElementById("uid").value);
     
                 if (uid == document.getElementById("uid").value) {
                     // other
@@ -209,4 +205,5 @@ function scrollDown() {
     chat.scrollTop = chat.scrollHeight;
 }
 
-setTimeout(readMsgs, 1000);
+setTimeout(readMsgs, 500);
+chatInterval = setInterval(readMsgs, 3000);
