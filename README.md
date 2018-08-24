@@ -7,7 +7,13 @@ PHExt will never make something easier that is part of the game since that would
 ## What's new in v1.0.1?
 
   * [pokeheroes.com/palpad](https://pokeheroes.com/palpad) is now a full page dedicated to palpad.
+  * A golden palpad icon is added in the userbar to go to [pokeheroes.com/palpad](https://pokeheroes.com/palpad)
   * Able to send images via the palpad page using [img]someurl.jpg[/img]
+
+## What is being worked on
+
+  * Groupchats
+  * Being able to pin chats
 
 # Requirements
 
