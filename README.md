@@ -6,7 +6,11 @@ PHExt will never make something easier that is part of the game since that would
 
 Made by [SwampFall](https://pokeheroes.com/userprofile?name=SwampFall).
 
-## What's new in v1.0.1?
+## What's new in v1.1.0?
+
+  * Sound notifications are added to the palpad page.
+
+# Other functionality
 
   * [pokeheroes.com/palpad](https://pokeheroes.com/palpad) is now a full page dedicated to palpad.
   * A golden palpad icon is added in the userbar to go to [pokeheroes.com/palpad](https://pokeheroes.com/palpad)
@@ -14,7 +18,7 @@ Made by [SwampFall](https://pokeheroes.com/userprofile?name=SwampFall).
 
 ## What is being worked on
 
-  * Sound notifications
+  * Sound notifications for rest of PH
   * Groupchats
   * Being able to pin chats
 
