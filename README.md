@@ -14,6 +14,7 @@ Made by [SwampFall](https://pokeheroes.com/userprofile?name=SwampFall).
 
 ## What is being worked on
 
+  * Sound notifications
   * Groupchats
   * Being able to pin chats
 
