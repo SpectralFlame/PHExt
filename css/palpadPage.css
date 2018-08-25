@@ -191,6 +191,8 @@ a span.last_msg {
 .msg {
     flex: 1;
     padding: 2px;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .timespace {

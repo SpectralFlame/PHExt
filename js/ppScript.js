@@ -4,8 +4,15 @@ let chatOldTime = 0;
 let chatInterval = null;
 let userInterval = null;
 let searching = false;
+let isActive = true;
+let notifyTimer = null;
+let newMsgs = [];
 
 function openPrivateChat(name, uid) {
+    if (searching) {
+        document.getElementById("tbxSearch").value = "";
+        searching = false;
+    }
     document.getElementById("username").innerHTML = name;
     document.getElementById("uid").value = uid;
     chatOldTime = 0;
@@ -15,8 +22,9 @@ function openPrivateChat(name, uid) {
         chatInterval = null;
     }
     readMsgs();
-    console.log("readMsgs started");
     chatInterval = setInterval(readMsgs, 3000);
+    document.getElementById("tbxChat").focus();
+    notify(false);
 }
 
 function searchUser(e) {
@@ -59,8 +67,21 @@ function updateUsers() {
 
 function addUsers(data) {
     $("#users").text("");
+    let newMsg = false;
     let convArr = JSON.parse(data)["convlist"];
     for (let i = convArr.length - 1; i >= 0; i--) {
+        if(convArr[i].isNew) {
+            newMsg = true;
+            if (convArr[i].Uid in newMsgs) {
+                if (newMsgs[convArr[i].Uid] !== convArr[i].lastMsg) {
+                    notify();
+                    newMsgs[convArr[i].Uid] = convArr[i].lastMsg;
+                }
+            } else {
+                newMsgs[convArr[i].Uid] = convArr[i].lastMsg;
+                notify();
+            }
+        }
         $("#users").prepend('<a class="friend_chat" onclick="openPrivateChat(\'' + convArr[i].Name + '\', ' + convArr[i].Uid + ');">' +
             '<span class="img"><img src="' + convArr[i].Avatar + '"></span>' +
             '<img src="//staticpokeheroes.com/img/misc/' + convArr[i].On + '.png"> ' + (convArr[i].isNew ? '<span style="font-size: 6pt; color: red"><b>NEW</b></span> ' : '') + '' + convArr[i].Name + '<br>' +
@@ -284,6 +305,9 @@ function addMessagesToChat(data) {
     
                 if (uid == document.getElementById("uid").value) {
                     // other
+                    if (!isActive) {
+                        notify();
+                    }
                     msgOuter.setAttribute("class", "msg_wrapper_outer mwoo");
                     elMsg.setAttribute("class", "msg_wrapper_inner other");
                     if (picspace == null) {
@@ -347,3 +371,40 @@ function scrollDown() {
 setTimeout(readMsgs, 500);
 chatInterval = setInterval(readMsgs, 3000);
 userInterval = setInterval(updateUsers, 3000);
+
+window.onfocus = function() {
+    isActive = true;
+    notify(false);
+};
+window.onblur = function() {
+    isActive = false;
+};
+
+let notified = false;
+function notify(t) {
+    if (t == undefined) {
+        if (notifyTimer == null) {
+            notifyTimer = setInterval(notifyTitle, 2000);
+        }
+        beep();
+    } else {
+        if (notifyTimer !== null) {
+            clearInterval(notifyTimer);
+        }
+        notifyTimer = null;
+        document.title = "PalPad";
+        newMsgs = [];
+    }
+}
+function notifyTitle() {
+    if (!notified) {
+        document.title = "New Message!";
+        notified = true;
+    } else {
+        document.title = "PalPad";
+        notified = false;
+    }
+}
+
+function beep() { let snd = document.getElementById("notification"); snd.play();}
+

@@ -1,6 +1,6 @@
 {
   "name": "PHExt",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A PH overlay",
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "background": {
@@ -27,18 +27,23 @@
     "default_popup": "www/popup.html",
     "default_icon": {
       "16": "img/duck16.png",
-      "32": "img/duck32.png"
+      "32": "img/duck32.png",
+      "64": "img/duck64.png",
+      "128": "img/duck128.png"
     }
   },
   "icons": {
     "16": "img/duck16.png",
-    "32": "img/duck32.png"
+    "32": "img/duck32.png",
+    "64": "img/duck64.png",
+    "128": "img/duck128.png"
   },
   "web_accessible_resources": [
     "www/palpadPage.html",
     "css/palpadPage.css",
     "js/ppScript.js",
-    "img/golden_palpad.png"
+    "img/golden_palpad.png",
+    "mp3/notification1.mp3"
   ],
   "manifest_version": 2
 }
