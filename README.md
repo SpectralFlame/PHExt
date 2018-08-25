@@ -38,3 +38,7 @@ Made by [SwampFall](https://pokeheroes.com/userprofile?name=SwampFall).
 ![Step 4](https://image.prntscr.com/image/3pPXyvmzRauOqd8WFQ7k8g.png)
 
 Now the extension is activated, enjoy pokeheroes! :)
+
+# Preview
+
+![chat](https://image.prntscr.com/image/a6IFVVr9T2OyfnSuDhgYKQ.png)
