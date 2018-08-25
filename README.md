@@ -24,16 +24,16 @@ Made by [SwampFall](https://pokeheroes.com/userprofile?name=SwampFall).
 
 # Installation
 
-* Step 1:
+* Step 1: Download
 
 ![Step 1](https://image.prntscr.com/image/IA0gRVN6QPi6A4AN7sHiWQ.png)
-* Step 2:
+* Step 2: Unzip
 
 ![Step 2](https://image.prntscr.com/image/Gl4wnHVcQ5yJIxDHOh9tmQ.png)
-* Step 3:
+* Step 3: Chrome extensions
 
 ![Step 3](https://image.prntscr.com/image/xW4eg-aXRlau6BJ8FWXedQ.png)
-* Step 4:
+* Step 4: Load PHExt
 
 ![Step 4](https://image.prntscr.com/image/3pPXyvmzRauOqd8WFQ7k8g.png)
 
