@@ -10,7 +10,7 @@ Made by [SwampFall](https://pokeheroes.com/userprofile?name=SwampFall).
 
   * Sound notifications are added to the palpad page.
 
-# Other functionality
+## Other functionality
 
   * [pokeheroes.com/palpad](https://pokeheroes.com/palpad) is now a full page dedicated to palpad.
   * A golden palpad icon is added in the userbar to go to [pokeheroes.com/palpad](https://pokeheroes.com/palpad)
